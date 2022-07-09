@@ -1,0 +1,43 @@
+$red: red;
+$green:green;
+$blu:blue;
+$border: 1px solid;
+$font-size: 1rem;
+@mixin article1($color, $border-color, $font-size) {
+    border: $border;
+    color: $color;
+    border-color: $border-color;
+    font-size: $font-size;
+    padding: 15px;
+    width: 100%;
+}
+body{
+    width: 100vw;
+}
+div{
+    border: $border $red;
+    padding: 20px;
+    text-align: center;
+    h1{
+        text-decoration: underline;
+        color: $green;
+    }
+    section{
+        display: flex;
+        border: none;
+        margin: 10px;
+        article{
+            @include article1 ($blu, $green, 1rem)
+        };
+        article:nth-child(2),
+        article:nth-child(4){
+            color: $red;
+        }
+    }
+
+    section:nth-child(3){
+        article{
+            @include article1($green, $blu, 24px)
+        }
+    }
+}

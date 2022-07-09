@@ -1,0 +1,28 @@
+body {
+  width: 100vw;
+}
+
+div {
+  border: 1px solid red;
+  padding: 20px;
+  text-align: center;
+}
+div h1 {
+  color: green;
+  text-decoration: underline;
+}
+div section {
+  display: flex;
+}
+div section article {
+  padding: 15px;
+  border: 1px solid green;
+  color: blue;
+  color: blue;
+}
+div section article:nth-child(2),
+div section article:nth-child(4) {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

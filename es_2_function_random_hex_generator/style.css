@@ -1,0 +1,61 @@
+div:nth-child(12) {
+  background: #E8830F;
+}
+
+div:nth-child(11) {
+  background: #BAE944;
+}
+
+div:nth-child(10) {
+  background: #AB02D0;
+}
+
+div:nth-child(9) {
+  background: #5C6B55;
+}
+
+div:nth-child(8) {
+  background: #582969;
+}
+
+div:nth-child(7) {
+  background: #0D9ACE;
+}
+
+div:nth-child(6) {
+  background: #A1DC05;
+}
+
+div:nth-child(5) {
+  background: #75B34E;
+}
+
+div:nth-child(4) {
+  background: #0E8077;
+}
+
+div:nth-child(3) {
+  background: #170F09;
+}
+
+div:nth-child(2) {
+  background: #3582AB;
+}
+
+div:nth-child(1) {
+  background: #512817;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+div {
+  width: 8.333%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+@use 'rem';
+@use "property";
+*{
+    font-size: 1.5rem;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    article{
+        font-size: rem.rem(24);
+        width: 100vh;
+        border: property.$red property.$border;
+    }
+}
+//nessuno mi ha detto di fare la pagina come le altre
+//avendola fatta già due volte inizia ad essere noioso
+//l'importante è che tutto funzioni dai moduli esterni

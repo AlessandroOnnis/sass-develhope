@@ -1,0 +1,60 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+$border:1px solid;
+$green: green;
+$red: red;
+$blu: blue;
+
+%color{
+    color: $green;
+}
+//quali sarebbero le stesse regole?
+//dallo screen ci sono solo cose diverse
+// tra h1 ed h2
+%article{
+    padding: 20px;
+    color: $blu;
+    border: $border $green;
+}
+div{
+    border: $border $red;
+    text-align: center;
+    padding: 20px;
+    & h1{
+        @extend %color;
+        text-decoration: underline $blu;
+        
+    }
+    & h2{
+        @extend %color;
+        padding: 1rem;
+        border: $border $red;
+        margin: auto;
+        width: 600px;
+        margin-bottom: 15px;
+
+    }
+    & section{
+        display: flex;
+        & article{
+            @extend %article;
+        }
+        & article:nth-child(2),
+        & article:nth-child(4){
+            @extend %article;
+            color: $red;
+        }
+    }
+:nth-child(4){
+    & article{
+        border-color: $blu;
+        width: 100vw;
+        font-size: 2rem;
+        margin-top: 15px;
+        color: $green;
+        @extend %article;
+    }
+}
+}

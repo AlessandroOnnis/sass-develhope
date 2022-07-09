@@ -1,0 +1,36 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bounce {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: red;
+  animation-name: movimento;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+@keyframes movimento {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+  0% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

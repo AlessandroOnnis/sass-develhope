@@ -1,0 +1,30 @@
+$red: red;
+$blue: blue;
+$green: green;
+$border: 1px solid;
+body{
+    width: 100vw;
+}
+div{
+    border: $border $red;
+    padding: 20px;
+    text-align: center;
+    h1{
+        color: $green;
+        text-decoration: underline;
+    }
+    section{
+        display: flex;
+        article{
+            padding: 15px;
+            border: $border $green;
+            color: $blue;
+            color: $blue;
+            
+        }
+        article:nth-child(2),
+        article:nth-child(4){
+                color: $red;
+        }
+    }
+}

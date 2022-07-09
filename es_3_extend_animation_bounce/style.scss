@@ -1,0 +1,46 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+$start: 0px;
+
+@function random-hex(){
+    $rgb: '';
+    $i: 6;
+    @while $i > 0 {
+      $hex-unit: random(16) - 1;
+      $letters: A, B, C, D, E, F;
+      @if $hex-unit > 9 { 
+        $hex-unit: nth($letters, ($hex-unit - 9));
+      };
+      $rgb: str-insert($rgb, ("" + $hex-unit), 0);
+      $i: $i - 1;
+    }
+    @return unquote("#"+"#{$rgb}");
+  }
+
+@mixin bounce ($start, $middle, $end){
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: red;
+    animation-name: movimento;
+    animation-duration: 1s;
+    @keyframes movimento{
+        from{transform: scaleY($start);}
+        to{transform: translateY($start);}
+        0% { transform: translateY($start);}
+        40%{transform: translateY($middle);}
+        60%{transform: translateY($end);}
+    }
+}
+.bounce{
+    @include bounce (0px, -30px, -30px /2 )
+    
+}
+.bg-random{
+    background: random-hex();
+}
