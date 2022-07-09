@@ -26,11 +26,10 @@ $start: 0px;
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    background-color: red;
     animation-name: movimento;
     animation-duration: 1s;
     @keyframes movimento{
-        from{transform: scaleY($start);}
+        from{transform: translateY($start);}
         to{transform: translateY($start);}
         0% { transform: translateY($start);}
         40%{transform: translateY($middle);}
