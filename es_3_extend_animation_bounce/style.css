@@ -10,13 +10,12 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  background-color: red;
   animation-name: movimento;
   animation-duration: 1s;
 }
 @keyframes movimento {
   from {
-    transform: scaleY(0px);
+    transform: translateY(0px);
   }
   to {
     transform: translateY(0px);
